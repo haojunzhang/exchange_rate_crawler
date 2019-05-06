@@ -1,0 +1,2 @@
+nohup scrapyd &
+nohup scrapydweb &

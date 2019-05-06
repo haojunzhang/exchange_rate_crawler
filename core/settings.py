@@ -24,7 +24,7 @@ SECRET_KEY = '49gmpkphn%ql(^eqt#f9k8r&!_cl*&67b$h4au55+ogh@o1fqo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -79,8 +79,8 @@ DATABASES = {
         'NAME': 'exchange_rate_db',
         'USER': 'djangouser',
         'PASSWORD': 'djangouser',
-        'HOST': '127.0.0.1',
-        'PORT': '6543'
+        'HOST': 'db',
+        'PORT': '5432'
     }
 }
 
