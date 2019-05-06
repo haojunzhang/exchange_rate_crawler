@@ -16,7 +16,6 @@ services:
     container_name: web
     ports:
       - 8000:8000
-      - 6800:6800
       - 5000:5000
     depends_on:
       - db
