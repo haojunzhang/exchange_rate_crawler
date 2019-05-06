@@ -48,7 +48,7 @@ PRIVATEKEY_FILEPATH = ''
 # ScrapydWeb is able to locate projects in the SCRAPY_PROJECTS_DIR,
 # so that you can simply select a project to deploy, instead of packaging it in advance.
 # e.g. 'C:/Users/username/myprojects/' or '/home/username/myprojects/'
-SCRAPY_PROJECTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exchange_rate_scrapy')
+SCRAPY_PROJECTS_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ############################## Scrapyd ########################################
 # Make sure that [Scrapyd](https://github.com/scrapy/scrapyd) has been installed

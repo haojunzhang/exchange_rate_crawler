@@ -7,22 +7,22 @@ services:
     expose:
       - 5432
     ports:
-      - 5432:5432
+      - 6543:5432
     environment:
       - POSTGRES_DB=exchange_rate_db
       - POSTGRES_USER=djangouser
       - POSTGRES_PASSWORD=djangouser
 
-  web:
-    container_name: web
-    expose:
-      - 8000
-    ports:
-      - 8000:8000
-
-  scrapy:
-    container_name: scrapy
-    expose:
-      - 5000
-    ports:
-      - 5000:5000
+#  web:
+#    container_name: web
+#    expose:
+#      - 8000
+#    ports:
+#      - 8000:8000
+#
+#  scrapy:
+#    container_name: scrapy
+#    expose:
+#      - 5000
+#    ports:
+#      - 5000:5000

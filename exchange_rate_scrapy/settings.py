@@ -10,6 +10,8 @@
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 import os
 import django
+
+# os.environ['DJANGO_SETTINGS_MODULE'] = 'core.settings'
 os.environ['DJANGO_SETTINGS_MODULE'] = 'core.settings'
 django.setup()
 BOT_NAME = 'exchange_rate_scrapy'
